@@ -15,25 +15,25 @@ public class Application4 {
 
         int[] arr = {2,4,5,1,6,3};
         int temp;
-
-        Arrays.sort(arr);
-        for (int x :
-                arr) {
-            System.out.println(x+" ");
-        }
-
-//        for (int i = arr.length-1; i >=0; i--) {
-//            for (int j = 0; j < i; j++) {
-//                if (arr[j]>arr[j+1]){
-//                    temp = arr[j];
-//                    arr[j] = arr[j+1];
-//                    arr[j+1] = temp;
-//                }
-//            }
-//        }
+//
+//        Arrays.sort(arr);
 //        for (int x :
 //                arr) {
-//            System.out.println(x);
+//            System.out.println(x+" ");
 //        }
+
+        for (int i = arr.length-1; i >=0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j]>arr[j+1]){
+                    temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+        for (int x :
+                arr) {
+            System.out.println(x);
+        }
     }
 }
