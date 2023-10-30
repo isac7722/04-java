@@ -17,6 +17,13 @@ public class Applicaiton {
 
     // 9. 프로그램 종료
 
+
+
+    //추가할 기능들
+    //1. 로그인 메뉴 - 처리
+    //2. 회원 삭제 기능
+
+
     public static void main(String[] args) {
 
         Menu.menu();

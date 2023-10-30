@@ -1,15 +1,14 @@
 package loginAlgorithm;
 
-public class User {
+public class User extends Admin {
     private String username;
     private String password;
 
-
-    // 생성자
-    User(String username, String password){
-        this.username = username;
-        this.password = password;
+    User(String username, String password) {
+        super(username, password);
     }
+
+
     //Getter and Setter
     public String getUsername() {
         return username;
