@@ -16,7 +16,7 @@ public class Menu {
 
             switch (choice){
                 case 1 : regisLogin.register(sc); break;
-                case 2 : regisLogin.login(sc); scissorPaperRock.SPRgmae(sc); break;
+                case 2 : regisLogin.login(sc); scissorPaperRock.SPRgame(sc); break;
                 case 9 :
                     System.out.println("프로그램을 종료합니다.");
                     System.exit(0);
