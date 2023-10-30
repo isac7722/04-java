@@ -38,7 +38,7 @@ public class Menu {
             Scissor_Paper_Rock scissorPaperRock = new Scissor_Paper_Rock();
 
             switch (choice){
-                case 1 : scissorPaperRock.SPRgmae(sc); break;
+                case 1 : scissorPaperRock.SPRgame(sc); break;
                 case 2 :
                     System.out.println("로그아웃 합니다~ ");
                     menu(); break;
@@ -63,7 +63,7 @@ public class Menu {
             Scissor_Paper_Rock scissorPaperRock = new Scissor_Paper_Rock();
 
             switch (choice){
-                case 1 : scissorPaperRock.SPRgmae(sc); break;
+                case 1 : scissorPaperRock.SPRgame(sc); break;
                 case 2 :
                     System.out.println("로그아웃 합니다~ ");
                     menu(); break;

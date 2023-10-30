@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Scissor_Paper_Rock {
-    public void SPRgmae(Scanner sc) {
+    public void SPRgame(Scanner sc) {
         System.out.println("가위 바위 보 게임을 시작합니다.");
         System.out.println("Scissor Paper Rock 중 하나를 입력하세요");
         String choice = sc.next();
