@@ -1,4 +1,4 @@
-package loginAlgorithm;
+package loginAlgorithm.app1;
 
 import java.util.Scanner;
 
@@ -25,8 +25,9 @@ public class Applicaiton {
 
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        Menu.menu();
+        Menu.menu(sc);
 
     }
 }

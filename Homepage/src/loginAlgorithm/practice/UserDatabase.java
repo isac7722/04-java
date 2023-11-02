@@ -1,4 +1,4 @@
-package loginAlgorithm;
+package loginAlgorithm.app1;
 
 public class UserDatabase {
     //10명까지 받을 수 있는 데이터베이스를 생성

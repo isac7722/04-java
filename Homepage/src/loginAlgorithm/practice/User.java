@@ -1,4 +1,4 @@
-package loginAlgorithm;
+package loginAlgorithm.app1;
 
 public class User extends Admin {
     private String username;

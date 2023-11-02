@@ -1,4 +1,4 @@
-package loginAlgorithm;
+package loginAlgorithm.app1;
 
 import java.util.Scanner;
 
@@ -40,7 +40,7 @@ public class Regis_Login {
             String loginId = sc.next();
             isAdmin = Admin.adminRegis(loginId, sc, isAdmin);
             if(isAdmin == true){
-                Menu.adminMenu();
+                Menu.adminMenu(sc);
             }else{
                 for (int i = 0; i <= UserDatabase.getCount(); i++) {
                     if (loginId .equals(UserDatabase.userId[i]) ){
@@ -52,7 +52,7 @@ public class Regis_Login {
                             if(loginPassword .equals(UserDatabase.userPassword[i])){
                                 System.out.println("비밀번호가 일치합니다. ");
                                 System.out.println("로그인 되었습니다. \n");
-                                Menu.loginMenu();
+                                Menu.loginMenu(sc);
                                 break log1;
                             }else {
                                 System.out.println("입력하신 비밀번호가 다릅니다. \n 비밀번호를 다시 입력해주세요");

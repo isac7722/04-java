@@ -1,4 +1,4 @@
-package loginAlgorithm;
+package loginAlgorithm.app1;
 
 import java.util.Scanner;
 

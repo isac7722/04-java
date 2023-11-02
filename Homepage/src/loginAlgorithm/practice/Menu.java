@@ -1,23 +1,22 @@
-package loginAlgorithm;
+package loginAlgorithm.app1;
 
 import java.util.Scanner;
 
 public class Menu {
 
-    public static void menu(){
-        Scanner sc = new Scanner(System.in);
+    public static void menu(Scanner sc){
         Regis_Login regisLogin = new Regis_Login();
 
 
         log1: while(true){
             System.out.println("1. 회원가입     2. 로그인     9. 프로그램 종료하기");
-            int choice = sc.nextInt();
+            String choice = sc.next();
             Scissor_Paper_Rock scissorPaperRock = new Scissor_Paper_Rock();
 
             switch (choice){
-                case 1 : regisLogin.register(sc); break;
-                case 2 : regisLogin.login(sc); scissorPaperRock.SPRgame(sc); break;
-                case 9 :
+                case "1" : regisLogin.register(sc); break;
+                case "2" : regisLogin.login(sc); scissorPaperRock.SPRgame(sc); break;
+                case "9" :
                     System.out.println("프로그램을 종료합니다.");
                     System.exit(0);
                 default:
@@ -27,8 +26,7 @@ public class Menu {
         }
     }
 
-    public static void loginMenu(){
-        Scanner sc = new Scanner(System.in);
+    public static void loginMenu(Scanner sc){
         Regis_Login regisLogin = new Regis_Login();
 
 
@@ -41,7 +39,7 @@ public class Menu {
                 case 1 : scissorPaperRock.SPRgame(sc); break;
                 case 2 :
                     System.out.println("로그아웃 합니다~ ");
-                    menu(); break;
+                    menu(sc); break;
                 case 9 :
                     System.out.println("프로그램을 종료합니다.");
                     System.exit(0);
@@ -52,8 +50,7 @@ public class Menu {
         }
     }
 
-    public static void adminMenu(){
-        Scanner sc = new Scanner(System.in);
+    public static void adminMenu(Scanner sc){
         Regis_Login regisLogin = new Regis_Login();
 
 
@@ -66,7 +63,7 @@ public class Menu {
                 case 1 : scissorPaperRock.SPRgame(sc); break;
                 case 2 :
                     System.out.println("로그아웃 합니다~ ");
-                    menu(); break;
+                    menu(sc); break;
                 case 3 : UserDatabase.allUserData(); break;
                 case 4 : regisLogin.deleteUser(sc); break;
                 case 9 :
